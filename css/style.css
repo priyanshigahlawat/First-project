@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width:30%;
+    border: 3px solid white;
+    border-radius: 60px;
+}
+
+.navbar{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    position:sticky;
+    top:0;
+    cursor: pointer;
+}
+
+.nav-list{
+    width :75%;
+    display:flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: papayawhip;
+    font-size: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: gray;
+}
+
+.right-nav{
+    width:50%;
+    text-align: right;
+    padding:0px 23px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+
+.background{
+    background: url("../img/dark.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+
+.firstHalf{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    color: silver;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height:80%;
+}
+
+.firstHalf{
+    display:flex;
+    width: 75%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secondHalf{
+    width:30%;
+
+}
+
+.secondHalf img{
+    width:70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display:block;
+    margin: auto;
+
+}
+
+.text-big{
+    font-size: 41px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.text-small{
+    font-size: 18px;
+}
+
+.text-secsmall{
+    font-size: 18px;
+}
+
+.btn{
+    padding: 7px 20px;
+    border: 2px solid white;
+    background:none;
+    border-radius: 8px;
+    color:silver;
+    margin : 7px 3px;
+    cursor: pointer;
+}
+
+.section{
+   height:500px; 
+   display:flex;
+   margin:auto;
+   justify-content: center;
+   align-items: center;
+   max-width: 80%;
+   font-family: 'ubuntu',sans-serif;
+
+
+}
+
+.secLeft{
+   flex-direction: row-reverse;
+
+}
+
+.paraz{
+  padding: 60px 65px;
+  text-align: justify;
+}
+
+.thumbnail img{
+    width:250px;
+    border:2px solid black;
+    border-radius: 65px;
+    margin-top: 19px;
+}
+
+.contact{
+    background-color: #e1dce7;
+    height:180vh;
+}
+
+.text-center{
+    text-align: center;
+    padding:30px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.form{
+    max-width: 1100px;
+    margin:auto;
+}
+
+.form-input{
+    width:100%;
+    font-size: 19px;
+    border:2px solid gray;
+    border-radius: 6px;
+    margin:30px 0px;
+    padding:5px 6px;
+}
+
+.btn-dark{
+    color:black;
+    border-color:gray;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer{
+    justify-content: center;
+    text-align: center;
+    padding: 20px 30px;
+    display: flex;
+    color: silver;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    right:5%;
+    top:15px;
+    cursor:pointer;
+}
+
+.line{
+    background-color: silver;
+    margin:5px 3px;
+    width: 40px;
+    height:4px;
+}
+@media only screen and (max-width:1152px)
+{
+    .nav-list{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .logo{
+        width:50%;
+        height:100px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .right-nav{
+        text-align: center;
+    }
+    #search{
+        width: 150px;
+    }
+    .text-big{
+        font-size: 20px;
+    }
+    .text-small{
+        width:250px;
+    }
+    
+    .text-secsmall{
+        width:350px;
+    }
+
+    .box-main{
+        flex-direction: column;
+        height: 150vh;
+    }
+    .secondHalf{
+        width:60%;
+    }
+    .section{
+        width: 1000px;
+        flex-direction: column-reverse;
+        height:100vh;
+    }
+    .contact{
+        height:800px;
+    }
+    .form{
+        max-width: 350px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav-resp{
+        height: 72px;
+    }
+
+    .v-class-resp{
+        opacity:0;
+    }
+    
+}
